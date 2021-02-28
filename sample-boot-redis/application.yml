@@ -1,0 +1,15 @@
+# General app config
+logging:
+  level:
+    com.example.demo: DEBUG
+
+spring:
+  cache:
+    type: redis
+  redis:
+    cluster:
+      nodes:
+        - redis-a.tenant-dev:6379
+        - redis-b.tenant-dev:6379
+        - redis-c.tenant-dev:6379
+
